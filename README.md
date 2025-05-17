@@ -66,3 +66,56 @@ This project focuses on analyzing HR data to understand the reasons behind emplo
 
 ## Project Structure
 
+
+
+# Telecom Customer Churn Prediction
+
+## Project Overview
+This project aims to predict customer churn for a telecom company using machine learning techniques. Customer churn is a critical business metric that indicates the percentage of customers who stop using a service during a given period. Predicting churn helps companies proactively retain customers, reduce revenue loss, and improve customer satisfaction.
+
+## Dataset
+The dataset contains customer information such as demographics, account details, contract type, payment method, and usage metrics. Key columns include:
+
+- Customer Status (target variable): Indicates if a customer is Active, Churned, Exited, or Inactive.
+- Total Charges
+- Tenure in Months
+- Contract type
+- Payment Method
+- Other customer attributes
+
+## Data Preprocessing
+- Mapped the target column (`Customer Status`) to binary values: Active (0) and Churned/Exited/Inactive (1).
+- Handled missing values in `Total Charges` by filling them with the median.
+- Converted categorical variables using label encoding for binary categories and one-hot encoding for others.
+- Dropped unnecessary columns like `Customer ID`.
+- Split data into training and test sets with stratification to maintain class distribution.
+
+## Model
+- Used a Random Forest Classifier to predict churn.
+- Trained on 80% of data and tested on 20%.
+- Evaluated using accuracy, classification report (precision, recall, f1-score), and confusion matrix.
+
+## Results
+- Achieved an accuracy of **1.** (replace with your actual accuracy).
+- Visualized confusion matrix to understand classification performance.
+- Segmented customers into 'At Risk', 'Loyal', and 'Dormant' based on predicted churn and tenure.
+
+## Improvements & Future Work
+- Address class imbalance with techniques like SMOTE or class weights.
+- Experiment with advanced models such as XGBoost or LightGBM.
+- Implement hyperparameter tuning for better performance.
+- Add model explainability using SHAP or ELI5.
+- Develop a real-time prediction API for business deployment.
+- Integrate SQL queries for feature engineering and data extraction automation.
+
+## How to Run
+1. Install required Python libraries: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`.
+2. Load the dataset (`telecom_customer_churn.csv`) in the same directory.
+3. Run the Python script or Jupyter notebook to train and evaluate the model.
+4. Visualizations and customer segments will be displayed as output.
+
+## Contact
+For questions or collaboration, contact: **[v.prasad]** | Email: **vathaluruprasad@gmail.com**
+
+
+
